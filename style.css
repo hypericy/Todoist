@@ -7,7 +7,7 @@ font: 'Raleway', sans-serif;
   letter-spacing: .5em;
   /* height: 100%; */
   top: 15%;
-  background: linear-gradient(to right ,red , yellow); /* Standard syntax */
+  /* background: linear-gradient(to right ,red , yellow); Standard syntax */
 }
 .container{
   display: flex;
