@@ -2,7 +2,7 @@ var addBtn = document.querySelector("#add_btn");
 var ul = document.querySelector("ul");
 var input = document.querySelector("#add");
 function toggleDone(node){
-    ul.classList.toggle("done");
+    node.classList.toggle("done");
 }
 function deleteLi(li){
     li.remove();
@@ -27,7 +27,24 @@ function createNewItem(){
     ul.appendChild(li);
     input.value="";
 } 
-
+//-----------------background-------------------
 addBtn.addEventListener("click",click);
-
 input.addEventListener("keypress",enter);
+
+var css = document.querySelector("h3");
+var color1 = document.querySelector("#color1");
+var color2 = document.querySelector("#color2");
+var body = document.querySelector("body");
+function init(){
+    // body.style.background= "linear-gradient(to right ,red , yellow)";
+    body.setAttribute("style",`background :linear-gradient(to right ,red , yellow)`);
+    css.innerHTML = body.getAttribute('style'); 
+}
+function setGradient(element){
+    //body.style.background = `linear-gradient(to right ,${color1.value} , ${color2.value})`;
+    body.setAttribute("style",`background :linear-gradient(to right ,${color1.value} , ${color2.value})`);
+    css.innerHTML = body.getAttribute('style'); 
+}
+color1.addEventListener("input",setGradient);
+color2.addEventListener("input",setGradient);
+init();
