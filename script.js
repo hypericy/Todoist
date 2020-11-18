@@ -38,13 +38,14 @@ var body = document.querySelector("body");
 function init(){
     // body.style.background= "linear-gradient(to right ,red , yellow)";
     body.setAttribute("style",`background :linear-gradient(to right ,#ffb5af , #cbf0ff)`);
-    css.innerHTML = body.getAttribute('style'); 
+    css.innerHTML = "Background : #ffb5af , #cbf0ff"; 
 }
 function setGradient(element){
     //body.style.background = `linear-gradient(to right ,${color1.value} , ${color2.value})`;
     body.setAttribute("style",`background :linear-gradient(to right ,${color1.value} , ${color2.value})`);
-    css.innerHTML = body.getAttribute('style'); 
-}
+    css.innerHTML = `Background : ${color1.value} , ${color2.value}`; 
+}; 
+
 color1.addEventListener("input",setGradient);
 color2.addEventListener("input",setGradient);
 init();
