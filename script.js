@@ -37,7 +37,7 @@ var color2 = document.querySelector("#color2");
 var body = document.querySelector("body");
 function init(){
     // body.style.background= "linear-gradient(to right ,red , yellow)";
-    body.setAttribute("style",`background :linear-gradient(to right ,red , yellow)`);
+    body.setAttribute("style",`background :linear-gradient(to right ,#ffb5af , #cbf0ff)`);
     css.innerHTML = body.getAttribute('style'); 
 }
 function setGradient(element){
