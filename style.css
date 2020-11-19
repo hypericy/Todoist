@@ -38,3 +38,10 @@ h3{
 .done {
   text-decoration: line-through;
 }
+.transparent{
+  background-color: transparent;
+  border : none;
+}
+.transparent:hover{
+  border : 1px solid grey;
+}

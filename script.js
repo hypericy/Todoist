@@ -20,7 +20,8 @@ function createNewItem(){
     li.addEventListener("click",toggleDone.bind(null,li));
     li.append(document.createTextNode(input.value+"    "));
     var del_btn = document.createElement("button");
-    del_btn.textContent="Delete";
+    del_btn.textContent="X";
+    del_btn.classList.add("transparent");
     del_btn.addEventListener("click",deleteLi.bind(null,li));
     li.append(del_btn);
 
