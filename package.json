@@ -1,0 +1,20 @@
+{
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "fancy to do list",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypericy/Todoist.git"
+  },
+  "author": "Chris Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hypericy/Todoist/issues"
+  },
+  "homepage": "https://github.com/hypericy/Todoist#readme",
+  "dependencies": {}
+}
